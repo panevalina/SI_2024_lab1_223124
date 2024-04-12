@@ -1,50 +1,54 @@
+1. Креиран профил panevalina
+2. Променето име на главна гранка од main во master
+3. Креиран remote репозиториум на Github SI_2024_lab1_223124
 4. mkdir SI_2024_lab1_223124  (правење директориум)
    cd SI_2024_lab1_223124 (влез во директориум)
    git init (иницијализација на GIT во директориум)
 5. git remote add origin https://github.com/panevalina/SI_2024_lab1_223124 (поврзување со оддалечениот репозиториум)
-6. notepad README.md (отворам датотека)
+6. notepad README.md (отворам датотека, ја пополнувам со содржина Лина Панева 223124)
    git add README.md (ја stage-ирам)
    git commit -m "Initial commit" (правам commit)
-7. git add . (ги stage-ирам)
+7. Ги превземам трите фајлови и ги сместувам во локалниот депозиториум
+   git add . (ги stage-ирам)
    git commit -m "Add starter code" (правам commit)
-8. git push origin master (синхронизацџија)
-9. git checkout -b bug1
-   git checkout master
-   git checkout -b bug2
-10.git checkout bug1
+8. git push origin master (синхронизацџија со оддалечениот репозиториум)
+9. git checkout -b bug1 (отворам гранка од master)
+   git checkout master (се префрлам на master)
+   git checkout -b bug2 (повторно отворам гранка од master)
+10.git checkout bug1 (се префрлам на првата гранка)
 11.А. промена на if (el.length() % 2 == 0) во if (el.length() % 2 != 0)
-   git add .
-   git commit -m "Fix wrong condition in filterOddLengthStrings"
-12.git checkout bug2
+   git add . (го stage-ирам)
+   git commit -m "Fix wrong condition in filterOddLengthStrings" (правам commit)
+12.git checkout bug2 (се префрлам на втората гранка)
 13.В. промена на if (el.length() < minLength) во if (el.length() >= minLength)
-   git add .
-   git commit -m "Fix wrong condition in makeBigStringFrom"
-14.git checkout bug1
+   git add . (го stage-ирам)
+   git commit -m "Fix wrong condition in makeBigStringFrom" (правам commit)
+14.git checkout bug1 (се враќам на првата гранка)
 15.додадов System.out.println(SILab1_1.filterOddLengthStrings(list));
-   git add SILab1Main.java
-   git commit -m "Call method filterOddLengthStrings in main class."
-16.git checkout bug2
+   git add SILab1Main.java (го stage-ирам)
+   git commit -m "Call method filterOddLengthStrings in main class." (правам commit)
+16.git checkout bug2 (се враќам на втората гранка)
 17.додадов System.out.println(SILab1_2.makeBigStringFrom(list));
-   git add SILab1Main.java
-   git commit -m "Call method makeBigStringFrom in main class."
-18.git push origin --all
-19.git checkout master
-20.git merge bug1 (без конфликт, ff стратегија)
-21.git push origin --all
-22.git checkout bug2
-23.git rebase master (со конфликт, ги ставив и двата метода)
+   git add SILab1Main.java (го stage-ирам)
+   git commit -m "Call method makeBigStringFrom in main class." (правам commit)
+18.git push origin --all (ги синхронизирам сите гранки со оддалечениот репозиториум)
+19.git checkout master (се префрлувам на master)
+20.git merge bug1 (правам спојување-без конфликт, Fast-forward стратегија)
+21.git push origin --all (ги синхронизирам сите гранки со оддалечениот репозиториум)
+22.git checkout bug2 (се префрлувам на втората гранка)
+23.git rebase master (правам спојување-со конфликт, го разрешив така што ги ставив и двата метода)
 	<<<<<<< HEAD
 	        System.out.println(SILab1_1.filterOddLengthStrings(list));
 	=======
 	        System.out.println(SILab1_2.makeBigStringFrom(list));
 	>>>>>>> 9f70b24 (Call method makeBigStringFrom in main class.)
-   git add SILab1Main.java
-   git rebase --continue
-24.git checkout master
-25.git merge bug2 (ff стратегија)
-26.git push origin master
-27.git push origin master bug2 --force
-28.git log > logs.txt
-29.
-
-
+   git add SILab1Main.java (ја stage-ирам)
+   git rebase --continue  (се довршува rebase-от)
+24.git checkout master (се префрлам на master)
+25.git merge bug2 (правам спојување-без конфликт, Fast-forward стратегија)
+26.git push origin master (синхронизација на сите гранки со оддалечениот репозиториум)
+27.git push origin master bug2 --force (синхронизација на сите гранки со оддалечениот репозиториум)
+28.git log > logs.txt (се креира датотека која се пополнува со git log-овите)
+   git add logs.txt 223124.txt (ги stage-ирам)
+   git commit -m "Final commit" (правам финален commit)
+29.git push origin --all  (синхронизација на сите гранки со оддалечениот репозиториум)
