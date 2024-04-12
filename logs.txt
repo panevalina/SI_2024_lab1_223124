@@ -1,0 +1,35 @@
+commit 1ae9efe68489260cbbb058b0c0c787454e7b95d8
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:33:36 2024 +0200
+
+    Put the two methods in SILab1Main
+
+commit 91889bfe59a9dd92af5ce3b2e1de007f70f2bc24
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:26:17 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit becdae41da320461887fd91ba45956e86d5dc9ed
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:31:09 2024 +0200
+
+    Call method filterOddLengthStrings in main class.
+
+commit e37ebcc6e85fd2fe212ce6f308d2d3e09d150e6e
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:24:05 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 76037fedfebefb284430e09e529ebf22075b370b
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:20:11 2024 +0200
+
+    Add starter code
+
+commit 2e19914ed61450bcba29d027bf716d449011323b
+Author: Lina Paneva <138421193+PanevaLina@users.noreply.github.com>
+Date:   Fri Apr 12 11:18:28 2024 +0200
+
+    Initial commit
